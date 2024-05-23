@@ -53,6 +53,10 @@ body::before {
     font-weight: 600;
     color: var(--color3);
     text-decoration: none;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 0 0 0 10px;
 }
 
 .presentation {
@@ -109,19 +113,27 @@ body::before {
 .footer {
     color: var(--color2);
     background-color: var(--color1);
-    padding: 24px;
+    padding: 15px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
     .header {
-        padding: 10%;  
+        padding: 10%;
+        border: 1px solid var(--color2);
     }
 
     .header-menu {
         justify-content: center;
+    }
+
+    .header-menu-link:focus {
+        outline: 2px solid white;
     }
 
     .presentation {
@@ -136,4 +148,28 @@ body::before {
 
 .second-word {
     color: var(--color3);
+}
+
+a {
+    text-decoration: none;
+}
+
+.icons {
+    fill: transparent;
+    stroke: var(--color3);
+}
+
+.presentation-links-navigation {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color3);
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0 0 10px;
+}
+
+.big-text {
+    font-size: 30px;
 }
