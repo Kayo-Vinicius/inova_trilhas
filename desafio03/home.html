@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -35,9 +35,16 @@
     </header>
     <main class="presentation">
         <section class="presentation-content">
-            <h1 class="presentation-content-title">Kayo<strong 
-            class="title-highlight"> Vinicius
-            </strong></h1>
+            <h1 id="typed-text" class="presentation-content-title">
+                <span id="typed-text-1"></span>
+                <span id="typed-text-2"></span>
+            </h1>
+            <script src="script.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    typingEffect(["Kayo", "Vinicius"], "typed-text");
+                });
+            </script>
             <p class="presentation-content-text">Olá! Sou Kayo Vinicus, sou desenvolvedor mobile Flutter.</p>
             <div class="presentation-links">
                 <h2 class="presentation-links-subtitle">Acesse minhas redes</h2>
@@ -61,7 +68,9 @@
                 </a>
             </div>
         </section>
-        <img class="presentation-image" src="./assets/img/imagem.png" alt="IMG">
+        <div class="presentation-image-container">
+            <img class="presentation-image" src="./assets/img/foto.jpg" alt="IMG">
+        </div>
     </main>
     <footer class="footer">
         <p>Desenvolvido por Kayo Vinicius</p>
